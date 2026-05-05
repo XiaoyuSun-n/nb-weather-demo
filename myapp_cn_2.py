@@ -13,16 +13,15 @@ from datetime import date,datetime
 st.set_page_config(page_title="城市外出建议 Demo", page_icon="🌤️")
 
 # ===== 内测密码保护 =====
-# password = st.text_input("🔐 输入内测邀请码", type="password")
+password = st.text_input("🔐 输入内测邀请码", type="password")
 
-# if password != st.secrets["APP_PASSWORD"]:
-#     st.info("该应用处于内测阶段，请输入邀请码访问")
-#     st.stop()
+if password != st.secrets["APP_PASSWORD"]:
+     st.info("该应用处于内测阶段，请输入邀请码访问")
+     st.stop()
 
 st.title("🌤️ 城市天气与空气质量 Demo")
 
 city = st.text_input("输入城市", "Bremen")
-WAQI_TOKEN = "cabc6501aa8f1cd650603aa5d56183cb1e08ef1b"
 # WAQI_TOKEN = st.secrets["WAQI_TOKEN"]
 
 
