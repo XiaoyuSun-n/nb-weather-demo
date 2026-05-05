@@ -1,0 +1,3 @@
+requirements:
+streamlit
+requests
