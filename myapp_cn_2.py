@@ -22,7 +22,7 @@ if password != st.secrets["APP_PASSWORD"]:
 st.title("🌤️ 城市天气与空气质量 Demo")
 
 city = st.text_input("输入城市", "Bremen")
-# WAQI_TOKEN = st.secrets["WAQI_TOKEN"]
+WAQI_TOKEN = st.secrets["WAQI_TOKEN"]
 
 
 def get_location(city):
